@@ -22,6 +22,7 @@ class NCLogger
   end
 
   def write
+    time = Time.new
     puts "[#{time.strftime('%Y-%m-%d')}] [#{@severity}] #{@message}"
   end
 end
